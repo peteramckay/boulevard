@@ -1,0 +1,40 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <script/>
+  <channel>
+    <title></title>
+    <link></link>
+    <description></description>
+    <language>en-us</language>
+    <pubDate></pubDate>
+    <copyright></copyright>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <webMaster>Your Name | yourname@example.com</webMaster>
+    <atom:link href="https://www.rssboard.org/files/sample-rss-2.xml" rel="self" type="application/rss+xml"/>
+
+
+    <item>
+      <title></title>
+      <link></link>
+      <description></description>
+      <pubDate></pubDate>
+      <guid></guid>
+    </item>
+
+    <item>
+      <title></title>
+      <link></link>
+      <description></description>
+      <pubDate></pubDate>
+      <guid></guid>
+    </item>
+
+    <item>
+      <title></title>
+      <link></link>
+      <description></description>
+      <pubDate></pubDate>
+      <guid></guid>
+    </item>
+
+  </channel>
+</rss>
