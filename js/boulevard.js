@@ -1,14 +1,17 @@
 /* A function to build a beautiful layout of newsy postcards from an RSS feed... */
 
 function buildPostcards() {
-  const rssUrl = "https://pmckay.com/feed.xml"; /* This is my personal website's RSS feed, as a sample. In your project, add your site's feed, or whatever other feed you want. -pm 😊 */
+
+  const proxyUrl = "https://api.allorigins.win/get?url=";
+  const feedUrl = encodeURIComponent("https://blog.pmckay.com/feed.xml"); /* This is my personal website's RSS feed, as a sample. In your project, add your site's feed, or whatever other feed you want. -pm 😊 */
   const rows = document.querySelectorAll(".postcards");
 
-  fetch(rssUrl)
-    .then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  fetch(proxyUrl + feedUrl)
+    .then(response => response.json())       // allorigins wraps in JSON
     .then(data => {
-      const items = data.querySelectorAll("item");
+      let parser = new DOMParser();
+      let xmlDoc = parser.parseFromString(data.contents, 'text/xml');
+      const items = xmlDoc.querySelectorAll("item");
 
       if (!items.length) {
         console.warn("No RSS items found.");
@@ -85,17 +88,19 @@ if (media) {
       day: "numeric"
     });
   }
-});
+}
 
 
 /* A function to build a river of headlines from an RSS feed... */
 
 function loadRSSheds() {
-  fetch("https://blog.pmckay.com/feed.xml")
-    .then(response => response.text())
+  const proxyUrl = "https://api.allorigins.win/get?url=";
+  const feedUrl = encodeURIComponent("https://blog.pmckay.com/feed.xml");
+  fetch(proxyUrl + feedUrl)
+    .then(response => response.json())       // allorigins wraps in JSON
     .then(data => {
       let parser = new DOMParser();
-      let xmlDoc = parser.parseFromString(data, 'text/xml');
+      let xmlDoc = parser.parseFromString(data.contents, 'text/xml');  
       let items = xmlDoc.getElementsByTagName('item');
       let list = document.getElementById('newsRiver');
       for (let i = 0; i < items.length; i++) {
@@ -113,5 +118,5 @@ function loadRSSheds() {
         list.appendChild(guid);
       }
     });
-};
+ }
 
