@@ -120,3 +120,5 @@ function loadRSSheds() {
     });
  }
 
+document.addEventListener("DOMContentLoaded", buildPostcards);
+document.addEventListener("DOMContentLoaded", loadRSSheds);
