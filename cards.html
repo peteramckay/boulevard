@@ -4,18 +4,17 @@
 
 <head>
 
-  <title>Desmond Sample Page</title>
+  <title>Boulevard's Newsy Postcards</title>
 
   <!-- Some meta tags... -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
 
   <!-- Site identity... -->
-  <link rel="canonical" href="https://indizr.com">
   <link href="img/icon-100.png" rel="icon" type="image/x-icon" />
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/desmond.css">
+  <link rel="stylesheet" href="/css/boulevard.css">
 
   
   <!-- Add schema.org metadata here later...
@@ -25,6 +24,9 @@
     </script>
 
     -->
+
+    <script src="/js/boulevard.js"></script>
+
 
     <noscript></noscript>  
   
@@ -37,250 +39,81 @@
 
 
 
+   <header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  
-  <a class="navbar-brand" href="https://indizr.com"><img src="img/logo-white-500.png" alt="indizr logo"></a>
-  
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="row">
 
+      <span id="screen"></span>
 
+      <form class="five columns"
+        action="https://buttondown.com/api/emails/embed-subscribe/peteramckay"
+         method="post"
+         class="embeddable-buttondown-form">
+        <label for="bd-email"><img src="img/email-iconmonstr-white.png" alt="email icon"><!-- Enter your email --> </label>
+        <input type="email" name="email" id="bd-email" />
+        <input type="submit" value="Subscribe" />
+        <p>
+          <a href="https://buttondown.com/refer/peteramckay" target="_blank"><!-- Powered by Buttondown. --></a>
+        </p>
+      </form>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-      </li>
+      <span class="three columns"></span>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DNDWG
-        </a>
-        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+      <ul id="socials" class="four columns">
+         <li><a href="//www.linkedin.com/in/peteramckay/" target="blank"><img src="img/linkedin.png" alt="LinkedIn icon"></a></li>
+         <li><a href="//github.com/peteramckay/" target="blank"><img src="img/github.png" alt="GitHub icon"></a></li>
+         <li><a href="//bsky.app/profile/peteramckay.bsky.social/" target="blank"><img src="img/bluesky.png" alt="Bluesky icon"></a></li>
+         <li><a href="//blog.pmckay.com/feed.xml" target="blank"><img src="img/rss.png" alt="RSS icon"></a></li>
+      </ul>
 
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Newsletter</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-      
-      
-
-      <!-- Sample code for a disabled link...
-      
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-
-    -->
-    </ul>
+    </nav>
     
-    
-    <span class="socicons">
-      <a href="https://indizr.wordpress.com/feed/" target="blank"><img src="img/rss-white.png" alt="RSS"></a>
-      <a href="https://github.com/indizr/" target="blank"><img src="img/github-white.png" alt="GitHub"></a>
-      <a href="https://twitter.com/itsindizr" target="blank"><img src="img/twitter-white.png" alt="Twitter"></a>
-    </span>
-    
-    
-  </div>
-</nav>
+      <div id="flag"
+      >
+        <h1>Peter A. McKay</h1>
 
+        <span id="details">
+          <a href="/about">About</a> | Email: peter[at]pmckay[dot]com
+        </span> <!-- End details -->
+      </div> <!-- End flag -->
 
-    <main role="main">
-
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Innovate toward independence.</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div>
-      </section>
-
-
-
-      <div class="album py-5">
-        <div class="container">
-
-          <div class="row">
-          
-          
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-            
-     </div> <!-- End row -->      
-     
-     
-             <div class="row">
-          
-          
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
-                 <div class="card-body">
-                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End card -->
-            </div> <!-- End col-md-4 -->
-
-            
-     </div> <!-- End row -->        
-     
-     
-     
-     
-       
-    </div> <!-- End container -->       
-   </div> <!-- End album -->       
-                 
-            
-            
-
-
-    </main>
+  </header>
 
 
 
 
-<div class="footer bg-dark">
+   <main>
+
+    <div class="postcards row" id="group1">
+
+      <!-- Individual cards go here -->
+
+    </div> <!-- End postcards row -->
 
 
- <div class="container-fluid">
-
-  <div class="row">
-
-     <div class="col-1"></div>
-  
-     <div class="col-5">
-       <p>Footer content</p>
-     </div>
-
-
-     <div class="col-3">
-       <p>Footer content</p>
-     </div>
-
-
-     <div class="col-3">
-       <p>Footer content</p>
-     </div>
-
-
-
+    <div class="postcards row" id="group2">
       
-  </div><!-- End row -->
+      <!-- Individual cards go here -->
 
-  </div> <!-- End container -->
+    </div> <!-- End postcards row -->      
+   
+   </main>
 
-</div> <!-- End footer -->
 
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="js/desmond.js"></script>
+   <footer class="container"><!-- Add shoutouts to Unsplash photographer, Gamache, Freepik for icons, Hattori etc. -->
 
+
+
+   </footer>
+
+
+
+<script>
+  buildPostcards();
+</script>
 
 </body>
 
