@@ -3,7 +3,7 @@
 function buildPostcards() {
 
   const proxyUrl = "https://api.allorigins.win/get?url=";
-  const feedUrl = encodeURIComponent("https://blog.pmckay.com/feed.xml"); /* This is my personal website's RSS feed, as a sample. In your project, add your site's feed, or whatever other feed you want. -pm 😊 */
+  const feedUrl = encodeURIComponent("/feed.xml"); /* This is my personal website's RSS feed, as a sample. In your project, add your site's feed, or whatever other feed you want. -pm 😊 */
   const rows = document.querySelectorAll(".postcards");
 
   fetch(proxyUrl + feedUrl)
