@@ -8,6 +8,7 @@ Contents
 
 - Basics & Typography
 - Grid
+- Navbar
 - Banner & Cards
 - Links
 - Buttons
@@ -177,13 +178,23 @@ article {}
 
 }
 
+/* Navbar...............................................*/
+
+nav {border: 2px dotted red;}
+
+nav .logo {
+  border: 2px dotted gray; 
+  font-family: 'Hattori Hanzo', serif;
+}
+
+nav .options {border: 2px dotted blue}
+
+nav .socials {border: 2px dotted green}
 
 /* Banner & Cards ........................................*/
 
 
 /* These styles tk. Need to pickup from customizations on pmckay.com */
-
-
 
 
 
